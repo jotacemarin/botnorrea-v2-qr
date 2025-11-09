@@ -13,6 +13,7 @@ provider:
   runtime: ${self:custom.secrets.provider.runtime}
   stage: ${self:custom.secrets.provider.stage, 'dev'}
   region: ${self:custom.secrets.provider.region}
+  profile: ${self:custom.secrets.provider.profile}
   environment:
     STAGE: ${self:provider.stage}
     REGION: ${self:provider.region}
